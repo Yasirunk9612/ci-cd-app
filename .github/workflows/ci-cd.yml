@@ -44,3 +44,20 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ci-cd-app:latest
+
+  deploy:
+    name: Deploy to EC2 Server
+    needs: docker-build-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            docker pull ${{ secrets.DOCKER_USERNAME }}/ci-cd-app:latest
+            docker stop ci-cd-app || true
+            docker rm ci-cd-app || true
+            docker run -d --name ci-cd-app -p 80:3000 ${{ secrets.DOCKER_USERNAME }}/ci-cd-app:latest
