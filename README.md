@@ -158,7 +158,7 @@ If you found this helpful:
 
 ## 🔥 Deployment Link
 
-👉 **Live Demo:** [http://YOUR_EC2_PUBLIC_IP](http:54.226.170.205/)
+👉 **Live Demo:** [http://54.226.170.205](http:54.226.170.205/)
 
 ---
 
