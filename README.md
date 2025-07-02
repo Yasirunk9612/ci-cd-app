@@ -168,14 +168,3 @@ _Add screenshots of the deployment, pipeline running, or terminal outputs._
 
 ---
 
-## 🚀 Diagram Example
-
-plaintext
-        +---------+         +-----------------+        +---------------------+
-        |  GitHub | ---->   | GitHub Actions  | --->   | Docker Hub Registry |
-        +---------+         +-----------------+        +---------------------+
-                                                            |
-                                                            v
-                                                     +-----------------+
-                                                     |  AWS EC2 Server |
-                                                     +-----------------+
