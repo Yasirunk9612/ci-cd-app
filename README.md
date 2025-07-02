@@ -1,8 +1,10 @@
 
 # 🚀 CI/CD Pipeline for Node.js Sample App
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/statusYasirunk9612/ci-cd-app/.github/workflows/ci-cd.yml?branch=main)
-![Docker Pulls](https://img.shields.io/docker/pulls/yasiru75/ci-cd-app)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Yasirunk9612/ci-cd-app/ci-cd.yml?branch=main)
+![Docker Pulls](https://img.shields.io/docker/pulls/yasru75/ci-cd-app)
+![GitHub Repo Stars](https://img.shields.io/github/stars/Yasirunk9612/ci-cd-app?style=social)
+![GitHub Repo Forks](https://img.shields.io/github/forks/Yasirunk9612/ci-cd-app?style=social)
 
 ---
 
